@@ -1,8 +1,8 @@
 //
 //  main.m
-//  认识OpenGLES
+//  TriangleWithoutGLSL
 //
-//  Created by 李礼光 on 2017/4/21.
+//  Created by 李礼光 on 2017/5/8.
 //  Copyright © 2017年 李礼光. All rights reserved.
 //
 
