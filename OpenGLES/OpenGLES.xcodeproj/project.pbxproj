@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041F5E711EC1524B00DE7465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F5E701EC1524B00DE7465 /* main.m */; };
+		041F5E741EC1524B00DE7465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F5E731EC1524B00DE7465 /* AppDelegate.m */; };
+		041F5E771EC1524B00DE7465 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F5E761EC1524B00DE7465 /* ViewController.m */; };
+		041F5E7A1EC1524B00DE7465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F5E781EC1524B00DE7465 /* Main.storyboard */; };
+		041F5E7C1EC1524B00DE7465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041F5E7B1EC1524B00DE7465 /* Assets.xcassets */; };
+		041F5E7F1EC1524B00DE7465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F5E7D1EC1524B00DE7465 /* LaunchScreen.storyboard */; };
+		041F5E851EC1567E00DE7465 /* texture0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041F5E841EC1567E00DE7465 /* texture0.jpg */; };
 		0484B2E91EBC4A60003C5BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B2E81EBC4A60003C5BBF /* main.m */; };
 		0484B2EC1EBC4A60003C5BBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B2EB1EBC4A60003C5BBF /* AppDelegate.m */; };
 		0484B2EF1EBC4A60003C5BBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B2EE1EBC4A60003C5BBF /* ViewController.m */; };
@@ -31,6 +38,7 @@
 		0484B3361EBC6D31003C5BBF /* Triangle.c in Sources */ = {isa = PBXBuildFile; fileRef = 0484B3331EBC6D31003C5BBF /* Triangle.c */; };
 		0484B3371EBC6D31003C5BBF /* Triangle_F_Shader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0484B3341EBC6D31003C5BBF /* Triangle_F_Shader.glsl */; };
 		0484B3381EBC6D31003C5BBF /* Triangle_V_Shader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 0484B3351EBC6D31003C5BBF /* Triangle_V_Shader.glsl */; };
+		04D0B3F61EC20C620049F073 /* texture1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D0B3F51EC20C620049F073 /* texture1.png */; };
 		04D20AA81EC0717200FC8F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D20AA71EC0717200FC8F20 /* main.m */; };
 		04D20AAB1EC0717200FC8F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D20AAA1EC0717200FC8F20 /* AppDelegate.m */; };
 		04D20AAE1EC0717200FC8F20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D20AAD1EC0717200FC8F20 /* ViewController.m */; };
@@ -40,6 +48,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041F5E6D1EC1524B00DE7465 /* Texture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Texture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041F5E701EC1524B00DE7465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041F5E721EC1524B00DE7465 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		041F5E731EC1524B00DE7465 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		041F5E751EC1524B00DE7465 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		041F5E761EC1524B00DE7465 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		041F5E791EC1524B00DE7465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041F5E7B1EC1524B00DE7465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041F5E7E1EC1524B00DE7465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		041F5E801EC1524B00DE7465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041F5E841EC1567E00DE7465 /* texture0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture0.jpg; sourceTree = "<group>"; };
 		0484B2E51EBC4A60003C5BBF /* Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0484B2E81EBC4A60003C5BBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0484B2EA1EBC4A60003C5BBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +99,7 @@
 		0484B33C1EBC6F2D003C5BBF /* libGLEW.2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.0.0.dylib; path = ../../../../../../usr/local/Cellar/glew/2.0.0/lib/libGLEW.2.0.0.dylib; sourceTree = "<group>"; };
 		0484B33E1EBC6F65003C5BBF /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		0484B3C21EC00CDC003C5BBF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		04D0B3F51EC20C620049F073 /* texture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1.png; sourceTree = "<group>"; };
 		04D20AA41EC0717200FC8F20 /* TriangleWithoutGLSL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriangleWithoutGLSL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D20AA71EC0717200FC8F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04D20AA91EC0717200FC8F20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +113,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		041F5E6A1EC1524B00DE7465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0484B2E21EBC4A60003C5BBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,12 +144,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041F5E6E1EC1524B00DE7465 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				041F5E841EC1567E00DE7465 /* texture0.jpg */,
+				04D0B3F51EC20C620049F073 /* texture1.png */,
+				041F5E721EC1524B00DE7465 /* AppDelegate.h */,
+				041F5E731EC1524B00DE7465 /* AppDelegate.m */,
+				041F5E751EC1524B00DE7465 /* ViewController.h */,
+				041F5E761EC1524B00DE7465 /* ViewController.m */,
+				041F5E781EC1524B00DE7465 /* Main.storyboard */,
+				041F5E7B1EC1524B00DE7465 /* Assets.xcassets */,
+				041F5E7D1EC1524B00DE7465 /* LaunchScreen.storyboard */,
+				041F5E801EC1524B00DE7465 /* Info.plist */,
+				041F5E6F1EC1524B00DE7465 /* Supporting Files */,
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
+		041F5E6F1EC1524B00DE7465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041F5E701EC1524B00DE7465 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0484B2BE1EBC4A30003C5BBF = {
 			isa = PBXGroup;
 			children = (
 				0484B2E61EBC4A60003C5BBF /* Triangle(渐变效果) */,
 				0484B3131EBC6D1E003C5BBF /* Triangle_improve(动画效果) */,
 				04D20AA51EC0717200FC8F20 /* TriangleWithoutGLSL(不含着色器) */,
+				041F5E6E1EC1524B00DE7465 /* Texture */,
 				0484B2C81EBC4A30003C5BBF /* Products */,
 				0484B3391EBC6EF3003C5BBF /* Frameworks */,
 			);
@@ -134,6 +188,7 @@
 				0484B2E51EBC4A60003C5BBF /* Triangle.app */,
 				0484B3121EBC6D1E003C5BBF /* Triangle_improve.app */,
 				04D20AA41EC0717200FC8F20 /* TriangleWithoutGLSL.app */,
+				041F5E6D1EC1524B00DE7465 /* Texture.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,6 +330,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		041F5E6C1EC1524B00DE7465 /* Texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041F5E831EC1524B00DE7465 /* Build configuration list for PBXNativeTarget "Texture" */;
+			buildPhases = (
+				041F5E691EC1524B00DE7465 /* Sources */,
+				041F5E6A1EC1524B00DE7465 /* Frameworks */,
+				041F5E6B1EC1524B00DE7465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Texture;
+			productName = Texture;
+			productReference = 041F5E6D1EC1524B00DE7465 /* Texture.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0484B2E41EBC4A60003C5BBF /* Triangle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0484B2F91EBC4A60003C5BBF /* Build configuration list for PBXNativeTarget "Triangle" */;
@@ -335,6 +407,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "李礼光";
 				TargetAttributes = {
+					041F5E6C1EC1524B00DE7465 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JKP4G35J39;
+						ProvisioningStyle = Automatic;
+					};
 					0484B2E41EBC4A60003C5BBF = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = JKP4G35J39;
@@ -368,11 +445,24 @@
 				0484B2E41EBC4A60003C5BBF /* Triangle */,
 				0484B3111EBC6D1E003C5BBF /* Triangle_improve */,
 				04D20AA31EC0717200FC8F20 /* TriangleWithoutGLSL */,
+				041F5E6C1EC1524B00DE7465 /* Texture */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		041F5E6B1EC1524B00DE7465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041F5E7F1EC1524B00DE7465 /* LaunchScreen.storyboard in Resources */,
+				04D0B3F61EC20C620049F073 /* texture1.png in Resources */,
+				041F5E7C1EC1524B00DE7465 /* Assets.xcassets in Resources */,
+				041F5E7A1EC1524B00DE7465 /* Main.storyboard in Resources */,
+				041F5E851EC1567E00DE7465 /* texture0.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0484B2E31EBC4A60003C5BBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,6 +500,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		041F5E691EC1524B00DE7465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041F5E771EC1524B00DE7465 /* ViewController.m in Sources */,
+				041F5E741EC1524B00DE7465 /* AppDelegate.m in Sources */,
+				041F5E711EC1524B00DE7465 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0484B2E11EBC4A60003C5BBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -451,6 +551,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		041F5E781EC1524B00DE7465 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041F5E791EC1524B00DE7465 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041F5E7D1EC1524B00DE7465 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041F5E7E1EC1524B00DE7465 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		0484B2F01EBC4A60003C5BBF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +618,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		041F5E811EC1524B00DE7465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JKP4G35J39;
+				INFOPLIST_FILE = Texture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LLG.Texture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		041F5E821EC1524B00DE7465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JKP4G35J39;
+				INFOPLIST_FILE = Texture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LLG.Texture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0484B2DC1EBC4A30003C5BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -699,6 +839,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		041F5E831EC1524B00DE7465 /* Build configuration list for PBXNativeTarget "Texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041F5E811EC1524B00DE7465 /* Debug */,
+				041F5E821EC1524B00DE7465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0484B2C21EBC4A30003C5BBF /* Build configuration list for PBXProject "OpenGLES" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -733,6 +882,7 @@
 				04D20ABA1EC0717200FC8F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -21,7 +21,7 @@
 
 
     //新建OpenGLES 上下文
-    self.mContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    self.mContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
     
     GLKView* view = (GLKView *)self.view;
     view.context = self.mContext;
