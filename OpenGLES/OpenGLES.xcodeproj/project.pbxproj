@@ -144,7 +144,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		041F5E6E1EC1524B00DE7465 /* Texture */ = {
+		041F5E6E1EC1524B00DE7465 /* Texture(纹理效果) */ = {
 			isa = PBXGroup;
 			children = (
 				041F5E841EC1567E00DE7465 /* texture0.jpg */,
@@ -159,6 +159,7 @@
 				041F5E801EC1524B00DE7465 /* Info.plist */,
 				041F5E6F1EC1524B00DE7465 /* Supporting Files */,
 			);
+			name = "Texture(纹理效果)";
 			path = Texture;
 			sourceTree = "<group>";
 		};
@@ -176,7 +177,7 @@
 				0484B2E61EBC4A60003C5BBF /* Triangle(渐变效果) */,
 				0484B3131EBC6D1E003C5BBF /* Triangle_improve(动画效果) */,
 				04D20AA51EC0717200FC8F20 /* TriangleWithoutGLSL(不含着色器) */,
-				041F5E6E1EC1524B00DE7465 /* Texture */,
+				041F5E6E1EC1524B00DE7465 /* Texture(纹理效果) */,
 				0484B2C81EBC4A30003C5BBF /* Products */,
 				0484B3391EBC6EF3003C5BBF /* Frameworks */,
 			);
