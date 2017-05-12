@@ -60,10 +60,10 @@ int Init ( ESContext *esContext ) {
     glBindVertexArray(userData->vaoId);
     
     // 位置属性
-    glVertexAttribPointer(VERTEX_POS_INDX, VERTEX_POS_SIZE, GL_FLOAT, GL_FALSE, VERTEX_STRIDE, (GLvoid*)0);
+    glVertexAttribPointer(VERTEX_POS_INDX, VERTEX_POS_SIZE, GL_FLOAT, GL_FALSE, VERTEX_STRIDE, (GLfloat *)NULL + 0);
     glEnableVertexAttribArray(0);
     // 颜色属性
-    glVertexAttribPointer(VERTEX_COLOR_INDX, VERTEX_COLOR_SIZE, GL_FLOAT, GL_FALSE, VERTEX_STRIDE, (GLvoid*)(VERTEX_POS_SIZE* sizeof(GLfloat)));
+    glVertexAttribPointer(VERTEX_COLOR_INDX, VERTEX_COLOR_SIZE, GL_FLOAT, GL_FALSE, VERTEX_STRIDE, (GLfloat *)NULL + 3);
     glEnableVertexAttribArray(1);
     
     
