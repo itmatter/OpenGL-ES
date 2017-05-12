@@ -7,3 +7,5 @@
 //
 
 const char *GetBundleFileName ( const char *fileName );
+
+void SetupTexture(const char *texSource); 

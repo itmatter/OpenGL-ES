@@ -143,8 +143,10 @@ typedef struct {
     GLuint vbo[2];
     GLuint vao;
 
-    GLfloat   angle;
-    ESMatrix  mvpMatrix;
+    GLfloat angle;
+    ESMatrix perspective;        //正射投影矩阵
+    ESMatrix modelview;          //模型矩阵
+    ESMatrix mvpMatrix;
 } UserData;
 
 
@@ -185,25 +187,20 @@ int Init ( ESContext *esContext ){
 void Update ( ESContext *esContext, float deltaTime ) {
     
    UserData *userData = esContext->userData;
-   ESMatrix perspective;        //正射投影矩阵
-   ESMatrix modelview;          //模型矩阵
-   float    aspect;
-
    userData->angle += ( deltaTime * 40.0f );
 
    if ( userData->angle >= 360.0f ) {
       userData->angle -= 360.0f;
    }
 
-   aspect = ( GLfloat ) esContext->width / ( GLfloat ) esContext->height;
 
     //每次更新一个画面
-   esMatrixLoadIdentity ( &perspective );
-   esPerspective ( &perspective, 30.0f, aspect, 5.0f, 20.0f );
-   esMatrixLoadIdentity ( &modelview );
-   esTranslate ( &modelview, 0.0, 0.0, -15.0 );
-   esRotate ( &modelview, userData->angle, 1.0, 1.0, 1.0 );
-   esMatrixMultiply ( &userData->mvpMatrix, &modelview, &perspective );
+   esMatrixLoadIdentity (&userData->perspective );
+   esPerspective (&userData->perspective, 30.0f, (GLfloat)esContext->width / (GLfloat)esContext->height, 5.0f, 20.0f );
+   esMatrixLoadIdentity (&userData->modelview );
+   esTranslate (&userData->modelview, 0.0, 0.0, -15.0 );
+   esRotate (&userData->modelview, userData->angle, 1.0, 1.0, 1.0 );
+   esMatrixMultiply (&userData->mvpMatrix, &userData->modelview, &userData->perspective );
     
 }
 

@@ -11,6 +11,7 @@
 //  Includes
 //
 #include <stdlib.h>
+#include "esFileWrapper.h"
 
 #ifdef __APPLE__
 #include <OpenGLES/ES3/gl.h>

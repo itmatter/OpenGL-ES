@@ -14,6 +14,11 @@
 		041F5E7C1EC1524B00DE7465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041F5E7B1EC1524B00DE7465 /* Assets.xcassets */; };
 		041F5E7F1EC1524B00DE7465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F5E7D1EC1524B00DE7465 /* LaunchScreen.storyboard */; };
 		041F5E851EC1567E00DE7465 /* texture0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 041F5E841EC1567E00DE7465 /* texture0.jpg */; };
+		044874A61EC5B13F00587AD7 /* esShader.c in Sources */ = {isa = PBXBuildFile; fileRef = 044874A01EC5B13F00587AD7 /* esShader.c */; };
+		044874A71EC5B13F00587AD7 /* esTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = 044874A11EC5B13F00587AD7 /* esTransform.c */; };
+		044874A81EC5B13F00587AD7 /* esUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 044874A21EC5B13F00587AD7 /* esUtil.c */; };
+		044874A91EC5B13F00587AD7 /* esUtil1.h in Headers */ = {isa = PBXBuildFile; fileRef = 044874A31EC5B13F00587AD7 /* esUtil1.h */; };
+		044874AB1EC5B13F00587AD7 /* esFileWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 044874A51EC5B13F00587AD7 /* esFileWrapper.m */; };
 		0484B2E91EBC4A60003C5BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B2E81EBC4A60003C5BBF /* main.m */; };
 		0484B2EC1EBC4A60003C5BBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B2EB1EBC4A60003C5BBF /* AppDelegate.m */; };
 		0484B2EF1EBC4A60003C5BBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B2EE1EBC4A60003C5BBF /* ViewController.m */; };
@@ -56,14 +61,12 @@
 		04A71BEA1EC59D4D00E290C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A71BE81EC59D4D00E290C8 /* Main.storyboard */; };
 		04A71BEC1EC59D4D00E290C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A71BEB1EC59D4D00E290C8 /* Assets.xcassets */; };
 		04A71BEF1EC59D4D00E290C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A71BED1EC59D4D00E290C8 /* LaunchScreen.storyboard */; };
-		04A71BFF1EC59D6800E290C8 /* esShader.c in Sources */ = {isa = PBXBuildFile; fileRef = 04A71BF51EC59D6800E290C8 /* esShader.c */; };
-		04A71C001EC59D6800E290C8 /* esTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = 04A71BF61EC59D6800E290C8 /* esTransform.c */; };
-		04A71C011EC59D6800E290C8 /* esUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 04A71BF71EC59D6800E290C8 /* esUtil.c */; };
-		04A71C021EC59D6800E290C8 /* FileWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A71BFA1EC59D6800E290C8 /* FileWrapper.m */; };
 		04A71C031EC59D6800E290C8 /* Cube.c in Sources */ = {isa = PBXBuildFile; fileRef = 04A71BFC1EC59D6800E290C8 /* Cube.c */; };
 		04A71C041EC59D6800E290C8 /* fShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 04A71BFD1EC59D6800E290C8 /* fShader.glsl */; };
 		04A71C051EC59D6800E290C8 /* vShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 04A71BFE1EC59D6800E290C8 /* vShader.glsl */; };
 		04A71C081EC59D7100E290C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A71C071EC59D7100E290C8 /* ViewController.m */; };
+		04A71C0D1EC5A01500E290C8 /* texture0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04A71C0B1EC5A01500E290C8 /* texture0.jpg */; };
+		04A71C0E1EC5A01500E290C8 /* texture1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A71C0C1EC5A01500E290C8 /* texture1.png */; };
 		04D0B3F61EC20C620049F073 /* texture1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04D0B3F51EC20C620049F073 /* texture1.png */; };
 		04D20AA81EC0717200FC8F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D20AA71EC0717200FC8F20 /* main.m */; };
 		04D20AAB1EC0717200FC8F20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D20AAA1EC0717200FC8F20 /* AppDelegate.m */; };
@@ -85,6 +88,12 @@
 		041F5E7E1EC1524B00DE7465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041F5E801EC1524B00DE7465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041F5E841EC1567E00DE7465 /* texture0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture0.jpg; sourceTree = "<group>"; };
+		044874A01EC5B13F00587AD7 /* esShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShader.c; sourceTree = "<group>"; };
+		044874A11EC5B13F00587AD7 /* esTransform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esTransform.c; sourceTree = "<group>"; };
+		044874A21EC5B13F00587AD7 /* esUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esUtil.c; sourceTree = "<group>"; };
+		044874A31EC5B13F00587AD7 /* esUtil1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esUtil1.h; sourceTree = "<group>"; };
+		044874A41EC5B13F00587AD7 /* esFileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esFileWrapper.h; sourceTree = "<group>"; };
+		044874A51EC5B13F00587AD7 /* esFileWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = esFileWrapper.m; sourceTree = "<group>"; };
 		0484B2E51EBC4A60003C5BBF /* Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0484B2E81EBC4A60003C5BBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0484B2EA1EBC4A60003C5BBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,17 +161,13 @@
 		04A71BEB1EC59D4D00E290C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A71BEE1EC59D4D00E290C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A71BF01EC59D4D00E290C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04A71BF51EC59D6800E290C8 /* esShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShader.c; sourceTree = "<group>"; };
-		04A71BF61EC59D6800E290C8 /* esTransform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esTransform.c; sourceTree = "<group>"; };
-		04A71BF71EC59D6800E290C8 /* esUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esUtil.c; sourceTree = "<group>"; };
-		04A71BF81EC59D6800E290C8 /* esUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esUtil.h; sourceTree = "<group>"; };
-		04A71BF91EC59D6800E290C8 /* FileWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWrapper.h; sourceTree = "<group>"; };
-		04A71BFA1EC59D6800E290C8 /* FileWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWrapper.m; sourceTree = "<group>"; };
 		04A71BFC1EC59D6800E290C8 /* Cube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Cube.c; sourceTree = "<group>"; };
 		04A71BFD1EC59D6800E290C8 /* fShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fShader.glsl; sourceTree = "<group>"; };
 		04A71BFE1EC59D6800E290C8 /* vShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vShader.glsl; sourceTree = "<group>"; };
 		04A71C061EC59D7100E290C8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		04A71C071EC59D7100E290C8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04A71C0B1EC5A01500E290C8 /* texture0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture0.jpg; sourceTree = "<group>"; };
+		04A71C0C1EC5A01500E290C8 /* texture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1.png; sourceTree = "<group>"; };
 		04D0B3F51EC20C620049F073 /* texture1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture1.png; sourceTree = "<group>"; };
 		04D20AA41EC0717200FC8F20 /* Triangle_GLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Triangle_GLKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D20AA71EC0717200FC8F20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -247,6 +252,19 @@
 				041F5E701EC1524B00DE7465 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0448749F1EC5B13F00587AD7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				044874A01EC5B13F00587AD7 /* esShader.c */,
+				044874A11EC5B13F00587AD7 /* esTransform.c */,
+				044874A31EC5B13F00587AD7 /* esUtil1.h */,
+				044874A21EC5B13F00587AD7 /* esUtil.c */,
+				044874A41EC5B13F00587AD7 /* esFileWrapper.h */,
+				044874A51EC5B13F00587AD7 /* esFileWrapper.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		0484B2BE1EBC4A30003C5BBF = {
@@ -438,7 +456,9 @@
 		04A71BDE1EC59D4D00E290C8 /* Cube_Texture(纹理) */ = {
 			isa = PBXGroup;
 			children = (
-				04A71BF41EC59D6800E290C8 /* Commin */,
+				04A71C0B1EC5A01500E290C8 /* texture0.jpg */,
+				04A71C0C1EC5A01500E290C8 /* texture1.png */,
+				0448749F1EC5B13F00587AD7 /* Common */,
 				04A71BFB1EC59D6800E290C8 /* Cube */,
 				04A71BE21EC59D4D00E290C8 /* AppDelegate.h */,
 				04A71BE31EC59D4D00E290C8 /* AppDelegate.m */,
@@ -462,25 +482,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		04A71BF41EC59D6800E290C8 /* Commin */ = {
-			isa = PBXGroup;
-			children = (
-				04A71BF51EC59D6800E290C8 /* esShader.c */,
-				04A71BF61EC59D6800E290C8 /* esTransform.c */,
-				04A71BF71EC59D6800E290C8 /* esUtil.c */,
-				04A71BF81EC59D6800E290C8 /* esUtil.h */,
-				04A71BF91EC59D6800E290C8 /* FileWrapper.h */,
-				04A71BFA1EC59D6800E290C8 /* FileWrapper.m */,
-			);
-			path = Commin;
-			sourceTree = "<group>";
-		};
 		04A71BFB1EC59D6800E290C8 /* Cube */ = {
 			isa = PBXGroup;
 			children = (
 				04A71BFC1EC59D6800E290C8 /* Cube.c */,
-				04A71BFD1EC59D6800E290C8 /* fShader.glsl */,
 				04A71BFE1EC59D6800E290C8 /* vShader.glsl */,
+				04A71BFD1EC59D6800E290C8 /* fShader.glsl */,
 			);
 			path = Cube;
 			sourceTree = "<group>";
@@ -511,6 +518,17 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0448749C1EC5B05400587AD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044874A91EC5B13F00587AD7 /* esUtil1.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		041F5E6C1EC1524B00DE7465 /* Texture_GLKit */ = {
@@ -588,6 +606,7 @@
 				04A71BD91EC59D4D00E290C8 /* Sources */,
 				04A71BDA1EC59D4D00E290C8 /* Frameworks */,
 				04A71BDB1EC59D4D00E290C8 /* Resources */,
+				0448749C1EC5B05400587AD7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -732,10 +751,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A71C0E1EC5A01500E290C8 /* texture1.png in Resources */,
 				04A71BEF1EC59D4D00E290C8 /* LaunchScreen.storyboard in Resources */,
 				04A71C041EC59D6800E290C8 /* fShader.glsl in Resources */,
 				04A71BEC1EC59D4D00E290C8 /* Assets.xcassets in Resources */,
 				04A71BEA1EC59D4D00E290C8 /* Main.storyboard in Resources */,
+				04A71C0D1EC5A01500E290C8 /* texture0.jpg in Resources */,
 				04A71C051EC59D6800E290C8 /* vShader.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -810,14 +831,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044874A61EC5B13F00587AD7 /* esShader.c in Sources */,
+				044874AB1EC5B13F00587AD7 /* esFileWrapper.m in Sources */,
+				044874A81EC5B13F00587AD7 /* esUtil.c in Sources */,
 				04A71C031EC59D6800E290C8 /* Cube.c in Sources */,
-				04A71BFF1EC59D6800E290C8 /* esShader.c in Sources */,
+				044874A71EC5B13F00587AD7 /* esTransform.c in Sources */,
 				04A71C081EC59D7100E290C8 /* ViewController.m in Sources */,
 				04A71BE41EC59D4D00E290C8 /* AppDelegate.m in Sources */,
-				04A71C001EC59D6800E290C8 /* esTransform.c in Sources */,
-				04A71C021EC59D6800E290C8 /* FileWrapper.m in Sources */,
 				04A71BE11EC59D4D00E290C8 /* main.m in Sources */,
-				04A71C011EC59D6800E290C8 /* esUtil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,6 +1266,7 @@
 				04A71BBF1EC58DC200E290C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04A71BF11EC59D4D00E290C8 /* Build configuration list for PBXNativeTarget "Cube_Texture" */ = {
 			isa = XCConfigurationList;
@@ -1253,6 +1275,7 @@
 				04A71BF31EC59D4D00E290C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D20AB81EC0717200FC8F20 /* Build configuration list for PBXNativeTarget "Triangle_GLKit" */ = {
 			isa = XCConfigurationList;

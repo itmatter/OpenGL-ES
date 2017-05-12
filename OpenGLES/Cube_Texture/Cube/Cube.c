@@ -8,78 +8,21 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "esUtil.h"
+#include "esUtil1.h"
 
-/*
-GLfloat vertices[] = {
-    //底面
-    -0.5f, -0.5f, -0.5f,
-    -0.5f, -0.5f,  0.5f,
-     0.5f, -0.5f,  0.5f,
-     0.5f, -0.5f, -0.5f,
-    
-    //顶面
-    -0.5f,  0.5f, -0.5f,
-    -0.5f,  0.5f,  0.5f,
-     0.5f,  0.5f,  0.5f,
-     0.5f,  0.5f, -0.5f,
-    
-    //背面
-    -0.5f, -0.5f, -0.5f,
-    -0.5f,  0.5f, -0.5f,
-     0.5f,  0.5f, -0.5f,
-     0.5f, -0.5f, -0.5f,
-    
-    //正面
-    -0.5f, -0.5f, 0.5f,
-    -0.5f,  0.5f, 0.5f,
-     0.5f,  0.5f, 0.5f,
-     0.5f, -0.5f, 0.5f,
-    
-    //左面
-    -0.5f, -0.5f, -0.5f,
-    -0.5f, -0.5f,  0.5f,
-    -0.5f,  0.5f,  0.5f,
-    -0.5f,  0.5f, -0.5f,
-    
-    //右面
-    0.5f, -0.5f, -0.5f,
-    0.5f, -0.5f,  0.5f,
-    0.5f,  0.5f,  0.5f,
-    0.5f,  0.5f, -0.5f,
-};
-
-
-GLuint indices[] = {
-    0, 2, 1,
-    0, 3, 2,
-    4, 5, 6,
-    4, 6, 7,
-    8, 9, 10,
-    8, 10, 11,
-    12, 15, 14,
-    12, 14, 13,
-    16, 17, 18,
-    16, 18, 19,
-    20, 23, 22,
-    20, 22, 21
-};
-
-*/
-
-
+//这里面纹理怎么覆盖六个面还需要重新考虑,或者其他方式设计,这里就暂时不浪费更多时间
 GLfloat vertices[] = {
     //底部4个点
-    -0.5f, -0.5f,  0.5f,  1.0f,  1.0f, 0.0f, 0.0f, 1.0f,    //下左下  0
-    -0.5f, -0.5f, -0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    //下左上  1
-     0.5f, -0.5f, -0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    //下右上  2
-     0.5f, -0.5f,  0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    //下右下  3
+    -0.5f, -0.5f,  0.5f,  1.0f,  1.0f, 0.0f, 0.0f, 1.0f,    0.0, 0.0,//下左下  0
+    -0.5f, -0.5f, -0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    0.0, 1.0,//下左上  1
+     0.5f, -0.5f, -0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    1.0, 1.0,//下右上  2
+     0.5f, -0.5f,  0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    1.0, 0.0,//下右下  3
     
     //顶部四个点
-    -0.5f,  0.5f,  0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    //上左下  4
-    -0.5f,  0.5f, -0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    //上左上  5
-     0.5f,  0.5f, -0.5f,  1.0f,  1.0f, 0.0f, 0.0f, 1.0f,    //上右上  6
-     0.5f,  0.5f,  0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    //上右下  7
+    -0.5f,  0.5f,  0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    0.0, 0.0,//上左下  4
+    -0.5f,  0.5f, -0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    0.0, 1.0,//上左上  5
+     0.5f,  0.5f, -0.5f,  1.0f,  1.0f, 0.0f, 0.0f, 1.0f,    1.0, 1.0,//上右上  6
+     0.5f,  0.5f,  0.5f,  1.0f,  0.0f, 0.0f, 1.0f, 1.0f,    1.0, 0.0,//上右下  7
 };
 
 
@@ -103,6 +46,9 @@ GLuint indices[] = {
     0, 5, 1,
     0, 4, 5,
 };
+
+
+
 
 
 typedef struct {
@@ -138,11 +84,17 @@ int Init ( ESContext *esContext ){
     glBindBuffer(1, userData->vao);
     glBindVertexArray(userData->vao);
     
-    glVertexAttribPointer ( 0, 4, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat),  (GLfloat *)NULL + 0 );
+    glVertexAttribPointer ( 0, 4, GL_FLOAT, GL_FALSE, 10 * sizeof(GLfloat),  (GLfloat *)NULL + 0 );
     glEnableVertexAttribArray ( 0 );
     
-    glVertexAttribPointer ( 1, 4, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat),  (GLfloat *)NULL + 4 );
+    glVertexAttribPointer ( 1, 4, GL_FLOAT, GL_FALSE, 10 * sizeof(GLfloat),  (GLfloat *)NULL + 4 );
     glEnableVertexAttribArray ( 1 );
+    
+    glVertexAttribPointer ( 2, 2, GL_FLOAT, GL_FALSE, 10 * sizeof(GLfloat),  (GLfloat *)NULL + 8 );
+    glEnableVertexAttribArray ( 2 );
+
+    
+    SetupTexture("texture0.jpg");
     
     glBindVertexArray(0);
     
@@ -171,7 +123,7 @@ void Update ( ESContext *esContext, float deltaTime ) {
 
     //每次更新一个画面
    esMatrixLoadIdentity ( &perspective );
-   esPerspective ( &perspective, 30.0f, aspect, 5.0f, 20.0f );
+   esPerspective ( &perspective, 20.0f, aspect, 5.0f, 20.0f );
    esMatrixLoadIdentity ( &modelview );
    esTranslate ( &modelview, 0.0, 0.0, -15.0 );
    esRotate ( &modelview, userData->angle, 1.0, 1.0, 1.0 );

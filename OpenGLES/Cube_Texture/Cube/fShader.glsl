@@ -2,10 +2,13 @@
 
 precision mediump float;
 
+uniform sampler2D colorMap;
+
+in vec2 varyTextCoord;
 in vec4 v_color;
 
-layout(location = 0) out vec4 outColor;
+out vec4 outColor;
 
 void main() {
-  outColor = v_color;
+    outColor = texture(colorMap, varyTextCoord) * v_color;
 }

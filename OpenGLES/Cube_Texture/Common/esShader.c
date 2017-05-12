@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "FileWrapper.h"
 
 //C语言不能直接返回一个数组,所以使用全局变量的方式.
 char shaderStr[1024];
